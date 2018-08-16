@@ -57,6 +57,10 @@ while True:
 
 	# record start/stop motion times
 	status_list.append(status)
+
+	#trim list to last 2 items
+	status_list = status_list[-2:]
+
 	# START
 	if status_list[-1] == 1 and status_list[-2] == 0:
 		# record time
